@@ -1,0 +1,14 @@
+{
+  "name": "studi-kasus-clean-code",
+  "version": "1.0.0",
+  "description": "Studi kasus Code Review dan Clean Code untuk Modul Pembayaran SPP",
+  "main": "src/payment.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Tim Pelatihan IT",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

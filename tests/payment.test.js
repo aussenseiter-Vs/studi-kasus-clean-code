@@ -1,10 +1,9 @@
-const { proses } = require("../src/payment");
-// Jika ingin mengetes hasil refactoring, ganti import di atas menjadi:
-// const { calculateDiscountedFee: proses } = require('../src/payment.refactored');
+const { calculateDiscountedFee: proses } = require("../src/payment");
 
 describe("Pengujian Logika Modul Pembayaran", () => {
   test("Harus mengembalikan 0 jika data siswa null", () => {
     expect(proses(null, 100000)).toBe(0);
+    expect(proses(undefined, 100000)).toBe(0);
   });
 
   test("Harus mengembalikan 0 jika saldo/fee <= 0", () => {
